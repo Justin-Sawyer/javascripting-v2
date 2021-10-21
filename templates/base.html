@@ -44,15 +44,10 @@
 </head>
 
 <body>
-    <div class="container-fluid fixed-top">
-    </div>
-
-    {% if messages %}
-    <div class="message_container"></div>
-    {% endif %}
-
     {% block page_header %}
-    <section class="container-fluid fixed-top">
+    <!-- Search, Nav, Home -->
+    <header class="container-fluid" id="navetc">
+        <div class="row">
         <div class="wrapper-top">
             <input type="hidden" id="typing-main-name" value="{{ title }}">
             <h1 class="typing-main" id="typing-main">
@@ -65,8 +60,7 @@
                 <!-- Page. -->
             </h2>
         </div>
-      </section>
-    <header class="container-fluid" id="navetc">
+    </div>
         <div class="row bg-success">
             <!-- Search -->
             <div class="col-12 col-md-4 order-md-2 my-auto py-1">
@@ -111,6 +105,10 @@
     </header>
     {% endblock %}
 
+    {% if messages %}
+    <div class="message_container"></div>
+    {% endif %}
+
     {% block content %}
     {% endblock %}
 
@@ -120,7 +118,7 @@
 
     {% block postloadjs %}
         
-        {% include 'includes/typewriter.html' %}
+        {% include 'includes/typewriter_js.html' %}
     <!--<script>
         $('.toast').toast('show');
     </script>-->

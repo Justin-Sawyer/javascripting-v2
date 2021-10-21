@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  height: 100vh;
+}
 
 body {
     font-family: montserrat;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* ------------------------------------------------------------------------------------- Typewriter effect */
@@ -33,9 +38,9 @@ body {
   }
 } */
 
-#navetc {
+/* #navetc {
   margin-top: 40vh;
-}
+} */
 
 @media screen and (max-width: 50em) {
     .wrapper-top,
@@ -47,9 +52,9 @@ body {
         font-size: 1.5em;
     }
 
-    #navetc {
+    /* #navetc {
       margin-top: 30vh;
-    }
+    } */
 }
 
 @media screen and (max-width: 30em) {
@@ -62,9 +67,9 @@ body {
         font-size: 1em;
     }
 
-    #navetc {
+    /* #navetc {
       margin-top: 20vh;
-    }
+    } */
 }
 /* ------------------------------------------------------------------------------------- Typewriter effect */
 
@@ -73,12 +78,21 @@ body {
     font-weight: 400;
 }
 
+.container-body {
+  flex-direction: column;
+}
+
+article {
+  min-height: 50vh;
+}
+
 /* ------------------------------------------------------------------------------------- Footer */
 
-footer {
+.footer {
   color: white;
-  position: fixed;
+  flex-grow: 1;
   bottom: 0;
+  min-height: 10vh;
 }
 /* ------------------------------------------------------------------------------------- Footer */
 
