@@ -10,9 +10,7 @@ body {
   height: 20vh;
   /*This part is important for centering*/
   display: flex;
-  /*/align-items: end;*/
   justify-content: center;
-  color: white; /* text white on page load, color change handled by typingDemoAnimation.js script */
 }
 
 .wrapper-top {
@@ -29,10 +27,14 @@ body {
   font-size: 3em;
 }
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0
   }
+} */
+
+#navetc {
+  margin-top: 40vh;
 }
 
 @media screen and (max-width: 50em) {
@@ -43,6 +45,10 @@ body {
     .typing-main,
     .typing-sub {
         font-size: 1.5em;
+    }
+
+    #navetc {
+      margin-top: 30vh;
     }
 }
 
@@ -55,6 +61,10 @@ body {
     .typing-sub {
         font-size: 1em;
     }
+
+    #navetc {
+      margin-top: 20vh;
+    }
 }
 /* ------------------------------------------------------------------------------------- Typewriter effect */
 
@@ -62,3 +72,13 @@ body {
     font-size: 1rem;
     font-weight: 400;
 }
+
+/* ------------------------------------------------------------------------------------- Footer */
+
+footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+/* ------------------------------------------------------------------------------------- Footer */
+

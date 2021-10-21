@@ -40,7 +40,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>JavaScripting | {% block extra_title %}{% endblock %}</title>
+    <title id="title">JavaScripting | {% block extra_title %}{% if section %}{{ section }}: {% endif %} {{ pagename }}{% endblock %}</title>
 </head>
 
 <body>
@@ -52,18 +52,36 @@
     {% endif %}
 
     {% block page_header %}
-    <header class="container-fluid fixed-top">
+    <section class="container-fluid fixed-top">
         <div class="wrapper-top">
-            <h1 class="typing-main">
-                JavaScripting : The Home Page.
+            <input type="hidden" id="typing-main-name" value="{{ title }}">
+            <h1 class="typing-main" id="typing-main">
+                <!-- "Site : Section." goes here -->
             </h1>
         </div>
         <div class="wrapper-bottom">
-            <h2 class="typing-sub">
-                Home.
+            <input type="hidden" id="typing-sub-name" value="{{ pagename }}">
+            <h2 class="typing-sub" id="typing-sub">
+                <!-- Page. -->
             </h2>
-          </div>
+        </div>
+      </section>
+    <header class="container-fluid" id="navetc">
         <div class="row bg-success">
+            <!-- Search -->
+            <div class="col-12 col-md-4 order-md-2 my-auto py-1">
+                <form method="GET" action="">
+                    <div class="input-group">
+                        <input class="form-control border-white border-right-0" type="text" name="q"
+                            placeholder="Search our site">
+                        <span class="input-group-text p-0 bg-success border-white" id="search"><button class="form-control btn" type="submit">
+                            <span class="icon">
+                                <i class="text-white fas fa-search"></i>
+                            </span>
+                        </button></span>
+                      </div>
+                </form>
+            </div>
             <!-- Main Site Home link -->
             <div class="col-6 col-md-4 order-md-1 my-auto py-1 py-lg-0 ps-0">
                 <a href="{% url 'home'%}" class="nav-link main-logo-link float-start">
@@ -89,64 +107,23 @@
                     {% endif %}
                 </ul>
             </div>
-            <!-- Search -->
-            <div class="col-12 col-md-4 order-md-2 my-auto py-1">
-                <form method="GET" action="">
-                    <div class="input-group">
-                        <input class="form-control border-white border-right-0" type="text" name="q"
-                            placeholder="Search our site">
-                        <span class="input-group-text p-0 bg-success border-white" id="search"><button class="form-control btn" type="submit">
-                            <span class="icon">
-                                <i class="text-white fas fa-search"></i>
-                            </span>
-                        </button></span>
-                      </div>
-                </form>
-            </div>
         </div>
-        <div class="wrapper-top">
-            <h1 class="typing-main">
-                JavaScripting : The Home Page.
-            </h1>
-        </div>
-        <div class="wrapper-bottom">
-            <h2 class="typing-sub">
-                Home.
-            </h2>
-          </div>
     </header>
     {% endblock %}
 
     {% block content %}
     {% endblock %}
 
-
+    {% block footer %}
+        {% include 'includes/footer.html' %}
+    {% endblock %}
 
     {% block postloadjs %}
+        
+        {% include 'includes/typewriter.html' %}
     <!--<script>
         $('.toast').toast('show');
     </script>-->
-    <script>
-        let typingMain = document.querySelector(".typing-main").innerText;
-        let typingSub = document.querySelector(".typing-sub").innerText;
-        let typingMainLength = typingMain.length;
-        let typingSubLength = typingSub.length;
-        let typingMainWidth = `${typingMainLength}ch`;
-        let typingSubWidth = `${typingSubLength}ch`;
-        let delay = typingMainLength * 100;
-        let durationMain = `${typingMainLength * 100}ms`;
-        let durationSub = `${typingSubLength * 100}ms`;
-        $('.typing-main').css('width', typingMainWidth);
-        $('.typing-sub').css('width', typingSubWidth);
-        $('.wrapper-top').css('color', 'black');
-        $('.typing-main').css('animation', `typing ${durationMain} steps(${typingMainLength})`);
-        setTimeout(function () { 
-            $('.wrapper-bottom').css('color', 'black')
-        }, delay + 50);
-        $('.typing-sub').css('animation', `typing ${durationSub} steps(${typingSubLength})`);
-        $('.typing-sub').css('animation-delay', durationMain);
-    </script>
-
     <script>
         $("#copyright").text(new Date().getFullYear());
     </script>
