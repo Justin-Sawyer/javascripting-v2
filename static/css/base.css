@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
-  height: 100vh;
+    height: 100vh;
 }
 
 body {
@@ -12,34 +12,35 @@ body {
 /* ------------------------------------------------------------------------------------- Typewriter effect */
 .wrapper-top,
 .wrapper-bottom {
-  height: 20vh;
-  /*This part is important for centering*/
-  display: flex;
-  justify-content: center;
+    background-color: #F0DB4F;
+    height: 20vh;
+    /*This part is important for centering*/
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper-top {
-  align-items: end;
+    align-items: end;
 }
 
 .typing-main,
 .typing-sub {
-  /*width: handled by typingDemoAnimation.js script;*/
-  /*animation: handled by typingDemoAnimation.js script; */
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 3em;
+    /*width: handled by typingDemoAnimation.js script;*/
+    /*animation: handled by typingDemoAnimation.js script; */
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 3em;
 }
 
 /* @keyframes typing {
-  from {
-    width: 0
-  }
+    from {
+        width: 0
+    }
 } */
 
 /* #navetc {
-  margin-top: 40vh;
+    margin-top: 40vh;
 } */
 
 @media screen and (max-width: 50em) {
@@ -53,7 +54,7 @@ body {
     }
 
     /* #navetc {
-      margin-top: 30vh;
+        margin-top: 30vh;
     } */
 }
 
@@ -68,7 +69,7 @@ body {
     }
 
     /* #navetc {
-      margin-top: 20vh;
+        margin-top: 20vh;
     } */
 }
 /* ------------------------------------------------------------------------------------- Typewriter effect */
@@ -78,21 +79,113 @@ body {
     font-weight: 400;
 }
 
-.container-body {
-  flex-direction: column;
+.nav-row {
+    height: 52px;
+    position: relative;
+    background-color: #F0DB4F;
+    display: none;
 }
 
-article {
-  min-height: 50vh;
+.nav-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.nav-link,
+.nav-link:focus {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.accordion-row {
+    border-bottom: 1px solid rgba(33,37,41,0.1);
+}
+
+.accordion-nav {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#accordion-nav {
+    display: none;
+}
+
+#accordion-button-1:not(.collapsed) {
+    color: white;
+    background-color: red;
+}
+
+#accordion-button-2:not(.collapsed) {
+    color: white;
+    background-color: orange;
+}
+
+#accordion-button-3:not(.collapsed) {
+    color: black;
+    background-color: #F0DB4F;
+}
+
+#accordion-button-4:not(.collapsed) {
+    color: white;
+    background-color: green;
+}
+
+#accordion-button-5:not(.collapsed) {
+    color: white;
+    background-color: blue;
+}
+
+#accordion-button-6:not(.collapsed) {
+    color: white;
+    background-color: indigo;
+}
+
+#accordion-button-7:not(.collapsed) {
+    color: black;
+    background-color: violet;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.container-body {
+    flex-direction: column;
+}
+
+.main-article {
+    min-height: 50vh;
+}
+
+/*.cp_embed_wrapper {
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0px, rgb(0, 0, 0) 0px -20px 20px -20px, rgb(0, 0, 0) 0px 20px 25px -15px; 
+    border-radius: 10px 10px 3px 3px; 
+    position: relative; 
+    overflow: hidden; 
+    /*height: 400px;*
+    width: 100%; 
+    margin: 20px auto;
+    padding: 0;
+}*/
+
+#yourjsconsole {
+    height: 300px;
 }
 
 /* ------------------------------------------------------------------------------------- Footer */
 
 .footer {
-  color: white;
-  flex-grow: 1;
-  bottom: 0;
-  min-height: 10vh;
+    color: white;
+    flex-grow: 1;
+    bottom: 0;
+    min-height: 10vh;
 }
 /* ------------------------------------------------------------------------------------- Footer */
 

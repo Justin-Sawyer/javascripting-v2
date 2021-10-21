@@ -6,19 +6,28 @@
 
 {% block content %}
 <div class="container container-body mt-4 mb-4">
-  <article class="row text-center">
-    <h3>Welcome!</h3>
-    <p class="mb-0">This is JavaScripting. It's a blog style site where I will be writing about JavaScript.</p>
-    <p class="mb-0">JavaScript is one of those funny things: you either take to it, or you don't.</p>
-    <p>Yeah, it's a little like Marmite!</p>
-    <p class="m-0">Here, I'll be detailing my struggles with this language, and also my joys when I "get it".</p>
-    <p>I'll be talking about the semantics, the different data types, how to code in JavaScript, and more.</p>
-    <p class="mb-0">The site will be split up into sections.</p>
-    <p class="mb-0">So, for example, there will be a section about Strings. Another about Arrays.</p>
-    <p>And so on...</p>
-    <p>With each "article", I'll add a code snippet, taken from my GitHub repository.</p>
-    <p class="mb-0">And there will also be a console playground where you can play along.</p>
-    <p>Join me for the ride!</p>
-  </article>
+    <article class="row main-article text-center">
+        <h3>Welcome!</h3>
+        <p class="mb-0">This is JavaScripting. It's a blog style site where I will be writing about JavaScript.</p>
+        <p class="mb-0">JavaScript is one of those funny things: you either take to it, or you don't.</p>
+        <p>Yeah, it's a little like Marmite!</p>
+        <p class="m-0">Here, I'll be detailing my struggles with this language, and also my joys when I "get it".</p>
+        <p>I'll be talking about the semantics, the different data types, how to code in JavaScript, and more.</p>
+        <p class="mb-0">The site will be split up into sections.</p>
+        <p class="mb-0">So, for example, there will be a section about Strings. Another about Arrays.</p>
+        <p>And so on...</p>
+        <p>With each "article", I'll add a code snippet, taken from my GitHub repository.</p>
+        <p>And there will also be a playground or a console playground where you can play along.</p>
+        <iframe class="mb-3" src="{{ script }}" id="yourjsconsole" title="yourjsconsole">
+        </iframe>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJjRYxX" data-user="JustinSawyer"
+            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/JustinSawyer/pen/OJjRYxX">
+            Typewriter effect</a> by Justin Sawyer (<a href="https://codepen.io/JustinSawyer">@JustinSawyer</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <p class="mt-3">Join me for the ride!</p>
+    </article>
 </div>
 {% endblock%}

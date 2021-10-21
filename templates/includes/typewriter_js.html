@@ -18,11 +18,11 @@
     $('.typing-sub').css('animation', `typing ${durationSub} steps(${typingSubLength})`);
     $('.typing-sub').css('animation-delay', durationMain);*/$
     let i = 0;
-    let fullTxt =  document.getElementById('typing-main-name');// 'JavaScripting : The Home Page.'
-    let txt = fullTxt.value
+    let fullMainNameTxt =  document.getElementById('typing-main-name'); // 'JavaScripting : The Home Page.'
+    let txt = fullMainNameTxt.value;
     let j = 0;
-    let fullTxt2 = document.getElementById('typing-sub-name') // 'Home.'
-    let txt2 = fullTxt2.value
+    let fullSubNameTxt = document.getElementById('typing-sub-name'); // 'Home.'
+    let txt2 = fullSubNameTxt.value;
     let speed = 100;
     $(document).ready(function() {
         function typeWriter() {
@@ -36,7 +36,7 @@
                     setTimeout(typeWriter, speed);
                 }, (txt.length*100) + 500);
             }
-        };
+        }
         typeWriter();
     });
 </script>
