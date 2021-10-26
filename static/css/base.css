@@ -111,9 +111,21 @@ body {
     display: none;
 }
 
+/*.accordion-button {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}*/
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
 #accordion-button-1:not(.collapsed) {
     color: white;
     background-color: red;
+}
+
+.basics-acc {
+    background-color: rgb(237, 70, 47, 0.8);
 }
 
 #accordion-button-2:not(.collapsed) {
@@ -121,9 +133,21 @@ body {
     background-color: orange;
 }
 
+.orange-acc {
+    background-color: rgb(245, 164, 49, 0.8);
+}
+
 #accordion-button-3:not(.collapsed) {
     color: black;
     background-color: #F0DB4F;
+}
+
+.yellow-acc {
+    background-color: rgb(240, 218, 78, 0.8);
+}
+
+#accordion-button-3:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 #accordion-button-4:not(.collapsed) {
@@ -131,9 +155,17 @@ body {
     background-color: green;
 }
 
+.green-acc {
+    background-color: rgb(60, 128, 5, 0.8);
+}
+
 #accordion-button-5:not(.collapsed) {
     color: white;
     background-color: blue;
+}
+
+.blue-acc {
+    background-color: rgb(34, 73, 251, 0.8);
 }
 
 #accordion-button-6:not(.collapsed) {
@@ -141,9 +173,21 @@ body {
     background-color: indigo;
 }
 
+.indigo-acc {
+    background-color: rgb(76, 39, 129, 0.8);
+}
+
 #accordion-button-7:not(.collapsed) {
     color: black;
     background-color: violet;
+}
+
+.violet-acc {
+    background-color: rgb(236, 130, 237, 0.8);
+}
+
+#accordion-button-7:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 .accordion-button:focus {
@@ -163,6 +207,41 @@ body {
 
 #yourjsconsole {
     height: 300px;
+}
+
+/* --------------------------------------------------------------------------------------- Cards */
+
+.card {
+    border-left-width: 0px;
+    /*border-bottom-width: 0px;*/
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)!important;
+    transition: all 0.2s ease-in-out!important;
+}
+
+.card:hover {
+  transform: scale(1.05)!important;
+}
+
+.card-footer {
+    padding: 0;
+    border-left-width: 0px;
+    /*border-bottom-width: 0px;*/
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+.card-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-left-width: 0px;
+    /*border-bottom-width: 0px;*/
+    border-right-width: 0px;
+    border-top-width: 0px;
 }
 
 /* ------------------------------------------------------------------------------------- Footer */

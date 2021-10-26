@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page-header %}
+{% endblock %}
+
+{% block content %}
+<div class="container container-body mt-4 mb-4">
+    <article class="row main-article text-center">
+        <h3>The Basics of JavaScript</h3>
+        {{ articles }}
+        {% for article in articles %}
+            {% for cat in article.category.all %}
+                <p>{{ cat }}</p>
+            {% endfor %}
+            <p>{{ article.name }}</p>
+            <p>{{ article.summary }}</p>
+            <p>{{ article.description }}</p>
+            <p>{{ article.script_title_1 }}</p>
+            <iframe class="mb-3" src="{{ article.script_1 }}" id="yourjsconsole" title="yourjsconsole">
+            </iframe>
+            <p>{{ article.script_1 }}</p>
+            <p>{{ article.codepen_title_1 }}</p>
+            <p>{{ article.codepen_data_slug_hash_1 }}</p>
+            <p>{{  article.date_added }}</p>
+        {% endfor %}
+    </article>
+</div>
+{% endblock%}
