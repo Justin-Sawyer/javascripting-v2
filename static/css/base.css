@@ -33,16 +33,6 @@ body {
     font-size: 3em;
 }
 
-/* @keyframes typing {
-    from {
-        width: 0
-    }
-} */
-
-/* #navetc {
-    margin-top: 40vh;
-} */
-
 @media screen and (max-width: 50em) {
     .wrapper-top,
     .wrapper-bottom {
@@ -52,10 +42,6 @@ body {
     .typing-sub {
         font-size: 1.5em;
     }
-
-    /* #navetc {
-        margin-top: 30vh;
-    } */
 }
 
 @media screen and (max-width: 30em) {
@@ -67,10 +53,6 @@ body {
     .typing-sub {
         font-size: 1em;
     }
-
-    /* #navetc {
-        margin-top: 20vh;
-    } */
 }
 /* ------------------------------------------------------------------------------------- Typewriter effect */
 
@@ -86,12 +68,19 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 375px) {
+    .nav-item .nav-link {
+        padding: 0;
+    }
+}
+
 .nav-container {
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 0;
 }
 
 .nav-link,
@@ -99,6 +88,14 @@ body {
     color: black;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-pills {
+    background-color: #F0DB4F;
 }
 
 .accordion-row {
@@ -163,17 +160,6 @@ body {
 .main-article {
     min-height: 50vh;
 }
-
-/*.cp_embed_wrapper {
-    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0px, rgb(0, 0, 0) 0px -20px 20px -20px, rgb(0, 0, 0) 0px 20px 25px -15px; 
-    border-radius: 10px 10px 3px 3px; 
-    position: relative; 
-    overflow: hidden; 
-    /*height: 400px;*
-    width: 100%; 
-    margin: 20px auto;
-    padding: 0;
-}*/
 
 #yourjsconsole {
     height: 300px;
