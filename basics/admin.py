@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from .models import Article, Category
 
-class ProductAdmin(admin.ModelAdmin):
+class ArticleAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'summary',
@@ -10,6 +10,13 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('name',)
+
+    class Media(admin.ModelAdmin):
+        css = {
+            'all': ('css/base.css',)
+        }
+
+        js = ('js/tinymce.js',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -19,5 +26,5 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 # Register your models here.
-admin.site.register(Article)
-admin.site.register(Category)
+admin.site.register(Article, ArticleAdmin)
+admin.site.register(Category, CategoryAdmin)

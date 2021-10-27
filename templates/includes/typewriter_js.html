@@ -30,12 +30,14 @@
                 document.getElementById("typing-main").innerHTML += txt.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
-                setTimeout(function () { 
-                    document.getElementById("typing-sub").innerHTML += txt2.charAt(j);
+            };
+            setTimeout(function () {
+                if (j < txt2.length) {
+                    var x= document.getElementById("typing-sub").innerHTML += txt2.charAt(j);
                     j++;
                     setTimeout(typeWriter, speed);
-                }, (txt.length*100) + 500);
-            }
+                }
+            }, (txt.length*speed));
         }
         typeWriter();
     });

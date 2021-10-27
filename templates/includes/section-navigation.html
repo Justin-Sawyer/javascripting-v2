@@ -8,58 +8,14 @@
                     The Basics
                 </button>
             </h2>
-            {% include 'includes/sections/basics.html' %}
-            <!--<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordion-nav">
                 <div class="accordion-body basics-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
+                        {% include 'basics/includes/basic-nav.html' %}
+                    </div>
                 </div>
-            </div>-->
+            </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
@@ -74,50 +30,56 @@
                 <div class="accordion-body orange-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title orange">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title orange">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title orange">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title orange">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,50 +96,56 @@
                 <div class="accordion-body yellow-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title yellow">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title yellow">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title yellow">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title yellow">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,50 +162,56 @@
                 <div class="accordion-body green-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title green">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title green">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title green">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title green">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -254,50 +228,56 @@
                 <div class="accordion-body blue-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title blue">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title blue">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title blue">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title blue">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -314,50 +294,56 @@
                 <div class="accordion-body indigo-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title indigo">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title indigo">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title indigo">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title indigo">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -374,50 +360,82 @@
                 <div class="accordion-body violet-acc">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
                         <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-3">
-                          <div class="card h-100 border-success">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer bg-success">
-                              <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                            </div>
-                          </div>
                         </div>
                         <div class="col mb-3">
                             <div class="card h-100 border-success">
-                              <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              </div>
-                              <div class="card-footer bg-success">
-                                <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
-                              </div>
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title violet">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer bg-success">
+                                    <a type="button" class="btn btn-success w-100 card-button" href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
