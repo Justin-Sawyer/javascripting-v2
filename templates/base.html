@@ -107,23 +107,23 @@
         <div class="row accordion-row">
             {% include 'includes/section-navigation.html' %}
         </div>
-  </header>
-  {% endblock %}
+    </header>
+    {% endblock %}
 
-  {% if messages %}
-  <div class=" message_container"></div>
-        {% endif %}
+    {% if messages %}
+        <div class=" message_container"></div>
+    {% endif %}
 
-        {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-        {% block footer %}
-        {% include 'includes/footer.html' %}
-        {% endblock %}
+    {% block footer %}
+    {% include 'includes/footer.html' %}
+    {% endblock %}
 
-        {% block postloadjs %}
-
+    {% block postloadjs %}
         {% include 'includes/typewriter_js.html' %}
+        {% include 'includes/scrolling_articles_js.html' %}
         <!--<script>
         $('.toast').toast('show');
         </script>-->
@@ -140,7 +140,7 @@
         <script>
             $("#copyright").text(new Date().getFullYear());
         </script>
-        {% endblock %}
+    {% endblock %}
 </body>
 
 </html>
