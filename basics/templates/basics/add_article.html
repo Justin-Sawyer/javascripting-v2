@@ -9,6 +9,7 @@
     <div class="row">
         <div class="col-12 col-lg-9">
             <article class="row main-article">
+                {{ form.media }}
                 <form method="POST" action="{% url 'add_article' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
@@ -33,4 +34,8 @@
 {% block postloadjs %}
     {{ block.super }}
     <!--<script src="{% static 'js/tinymce.js' %}"></script>-->
+    <script>
+        // Change color of checkbox. Works in Chrome and Safari desktop
+        $('input[type="checkbox"]').css('filter', 'hue-rotate(300deg)');
+    </script>
 {% endblock %}
