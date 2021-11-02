@@ -91,6 +91,8 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -167,35 +169,35 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TINYMCE_JS_URL = os.path.join(STATIC_URL, "js/tinymce.js")
-# TINYMCE_DEFAULT_CONFIG = {
-#     "height": "320px",
-#     "width": "960px",
-#     "menubar": "file edit view insert format tools table help",
-#     "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code "
-#     "fullscreen insertdatetime media table paste code help wordcount spellchecker",
-#     "toolbar": "undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft "
-#     "aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor "
-#     "backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | "
-#     "fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | "
-#     "a11ycheck ltr rtl | showcomments addcomment code",
-#     "custom_undo_redo_levels": 10,
-#     "toolbar_mode": 'wrap',
-#     # "language": "es_ES",  # To force a specific language instead of the Django current language.
-# }
+TINYMCE_DEFAULT_CONFIG = {
+    "height": "320px",
+    "width": "960px",
+    "menubar": "file edit view insert format tools table help",
+    "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code "
+    "fullscreen insertdatetime media table paste code help wordcount spellchecker",
+    "toolbar": "undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft "
+    "aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor "
+    "backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | "
+    "fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | "
+    "a11ycheck ltr rtl | showcomments addcomment code",
+    "custom_undo_redo_levels": 10,
+    "toolbar_mode": 'wrap',
+    # "language": "es_ES",  # To force a specific language instead of the Django current language.
+}
 TINYMCE_SPELLCHECKER = True
 TINYMCE_COMPRESSOR = False
 
 # Being kept for extra media, if necessary
-# TINYMCE_EXTRA_MEDIA = {
-#     'css': {
-#         'all': [
-#             None
-#         ],
-#     },
-#     'js': [
-#         None
-#     ],
-# }
+TINYMCE_EXTRA_MEDIA = {
+    'css': {
+        'all': [
+            os.path.join(STATIC_URL, "css/base.css")
+        ],
+    },
+    'js': [
+        os.path.join(STATIC_URL, "js/tinymce.js")
+    ],
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

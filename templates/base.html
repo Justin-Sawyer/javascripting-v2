@@ -112,7 +112,26 @@
     {% endblock %}
 
     {% if messages %}
-        <div class=" message_container"></div>
+        <div class=" message_container">
+            
+        </div>
+        <div aria-live="polite" aria-atomic="true">
+            <div class="toast-container position-absolute top-0 end-0 p-3">
+                {% for message in messages %}
+                    {% with message.level as level %}
+                        {% if level == 40 %}
+                            {% include 'includes/toasts/toast_error.html' %}
+                        {% elif level == 30 %}
+                            {% include 'includes/toasts/toast_warning.html' %}
+                        {% elif level == 25 %}
+                            {% include 'includes/toasts/toast_success.html' %}
+                        {% else %}
+                            {% include 'includes/toasts/toast_info.html' %}
+                        {% endif %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
+        </div>
     {% endif %}
 
     {% block content %}
@@ -125,9 +144,15 @@
     {% block postloadjs %}
         {% include 'includes/typewriter_js.html' %}
         {% include 'includes/scrolling_articles_js.html' %}
-        <!--<script>
-        $('.toast').toast('show');
-        </script>-->
+        <script>
+            $('.toast').show();
+            setTimeout(function () {
+                $('.toast').hide("slow");
+            }, 10000);
+            $(".toastCloseBtn").on('click', function(){
+                $(this).parent().parent('div').hide();
+            });
+        </script>
         <script>
             $(document).ready(function () {
                 $('#dropdownMenuLink').on('click', function () {
